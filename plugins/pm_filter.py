@@ -95,12 +95,11 @@ async def next_page(bot, query):
         ]
         btn.insert(0,            
             InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇs 📰", callback_data=f"languages#{key}#{req}#{offset}")
-        )
+       )        
     else:
         btn.insert(0,            
             InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇs 📰", callback_data=f"languages#{key}#{req}#{offset}")
-        )
-
+       )
     if 0 < offset <= 10:
         off_set = 0
     elif offset == 0:
