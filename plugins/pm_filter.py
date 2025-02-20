@@ -94,11 +94,11 @@ async def next_page(bot, query):
             for file in files
         ]
         btn.insert(0,            
-            InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇs 📰", callback_data=f"languages#{key}#{req}#{offset}")]
+            InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇs 📰", callback_data=f"languages#{key}#{req}#{offset}")
         )
     else:
         btn.insert(0,            
-            InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇs 📰", callback_data=f"languages#{key}#{req}#{offset}")]
+            InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇs 📰", callback_data=f"languages#{key}#{req}#{offset}")
         )
 
     if 0 < offset <= 10:
@@ -229,7 +229,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     BUTTONS[key] = search
     
     btn.insert(0,            
-            InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇs 📰", callback_data=f"languages#{key}#{req}#{offset}")]
+            InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇs 📰", callback_data=f"languages#{key}#{req}#{offset}")
         )
     
     if offset != "":
@@ -821,7 +821,7 @@ async def auto_filter(client, msg, spoll=False):
             for file in files
         ]
     btn.insert(0,            
-            InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇs 📰", callback_data=f"languages#{key}#{req}#{offset}")]
+            InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇs 📰", callback_data=f"languages#{key}#{req}#{offset}")
         )
     
     if offset != "":
